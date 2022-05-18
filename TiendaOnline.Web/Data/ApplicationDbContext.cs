@@ -38,7 +38,7 @@ namespace TiendaOnline.Web.Data
                         .IsUnique();
 
             modelBuilder.Entity<Product>()
-             .HasIndex(t => t.Name)
+                .HasIndex(t => t.Name)
              .IsUnique();
 
 

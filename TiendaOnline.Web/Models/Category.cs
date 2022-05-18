@@ -14,9 +14,8 @@ namespace TiendaOnline.Web.Models
         //TODO: Pending to put the correct paths
         [Display(Name = "Image")]
         public string ImageFullPath => ImageId == Guid.Empty
-        ? "$https://localhost:44390/images/noimage.png"// luego cambiamos esta url por la de
-                                                       //Azure
-        : $"https://tiendaonline.Web.blob.core.windows.net/categories/{ImageId}"; // blob en Azure
+        ? $"images/noimage.png"// luego cambiamos esta url por la de //Azure
+        : $"https://tiendaonlinedemo1.blob.core.windows.net/categories/{ImageId}"; // blob en Azure
     }
 }
 
