@@ -25,7 +25,7 @@
         //TO DO: Pendiente cambiar los paths por los de Azure
         [Display(Name = "Image")]
         public string ImageFullPath => ProductImages == null || ProductImages.Count == 0
-        ? $"https://localhost:44390/images/noimage.png"
+        ? $"/images/noimage.png"
         : ProductImages.FirstOrDefault().ImageFullPath;
     }
 }

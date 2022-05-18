@@ -1,4 +1,4 @@
-﻿@model TiendaOnline.Web.Models.CategoryViewModel
+﻿@model TiendaOnline.Web.Models.ProductViewModel
 
 @{
     ViewData["Title"] = "Create";
@@ -6,14 +6,14 @@
 
 <h2>Create</h2>
 
-<h4>Category</h4>
+<h4>Product</h4>
 <hr />
 <div class="row">
     <div class="col-md-4">
         <form asp-action="Create" enctype="multipart/form-data">
             <div asp-validation-summary="ModelOnly" class="text-danger"></div>
 
-            <partial name="_Category" />
+            <partial name="_Product" />
 
             <div class="form-group">
                 <input type="submit" value="Create" class="btn btn-primary" />
@@ -24,8 +24,7 @@
 </div>
 
 @section Scripts {
-    @{
-    await Html.RenderPartialAsync("_ValidationScriptsPartial");
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
 }
-}
+
 

@@ -33,6 +33,7 @@ namespace TiendaOnline.Web
                   services.AddTransient<SeedDb>();
                   services.AddScoped<IBlobHelper, BlobHelper>();
                   services.AddScoped<IConverterHelper, ConverterHelper>();
+                  services.AddScoped<ICombosHelper, CombosHelper>();
                   services.AddControllersWithViews();
 
             }
